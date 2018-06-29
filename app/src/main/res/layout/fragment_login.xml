@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/detailsElementBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="用户登陆"
+        android:textSize="40sp" />
+
+    <RelativeLayout
+        android:id="@+id/lg_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal"
+        android:paddingBottom="10sp"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
+        android:paddingTop="10sp"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/lg_userNameICON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_mylocation" />
+
+        <View
+            android:id="@+id/viewName"
+            android:layout_width="1dip"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/lg_userNameICON"
+            android:background="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/lg_userNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:layout_toRightOf="@+id/viewName"
+            android:hint="用户名" />
+
+        <ImageView
+            android:id="@+id/lg_userNameClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_centerVertical="true"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/lg_passWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal"
+        android:paddingBottom="10sp"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
+        android:paddingTop="10sp"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/lg_passWordICON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_sort_by_size" />
+
+        <View
+            android:id="@+id/viewName1"
+            android:layout_width="1dip"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/lg_passWordICON"
+            android:background="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/lg_passWordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/viewName1"
+            android:ems="10"
+            android:hint="用户密码"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/lg_passWordClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/lg_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:text="记住密码" />
+
+    <Button
+        android:id="@+id/lg_loginButt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp"
+        android:elevation="0dp"
+        android:text="登陆" />
+</LinearLayout>
